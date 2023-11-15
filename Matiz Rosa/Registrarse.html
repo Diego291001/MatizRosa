@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Matiz Rosa</title>
-        <link rel="stylesheet" href="StylesRegistrar.css">
-        <script src="RegScript.js"></script>
-    </head>
-    <body>
-        <div class="bg"></div>
-        <div class="bg bg2"></div>
-        <div class="bg bg3"></div>
-        <div class="content">
-        <img src="Logo.jpg" alt="Mi Imagen" class="Imagen-Logo">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matiz Rosa</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="icon" type="image/png" href="imagenes/Logo.png">
+    <script src="RegScript.js"></script>
+</head>
+
+<body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="content">
+        <img src="C:\Users\USUARIO\Desktop\Matiz Rosa\Imagenes\Logo.jpg" alt="Mi Imagen" class="Imagen-Logo">
         <br></br>
         <div class="conteiner">
             <form id="registrar-form">
-                <input type="text" placeholder="Nombres" id="nombre-usuario">
-                <input type="text" placeholder="Apellidos" id="apellido-usuario">
+                <input type="text" placeholder="Nombre Completo" id="nombre-usuario">
                 <br></br>
                 <input type="text" placeholder="Correo" id="correo-usuario">
-                <input type="password" placeholder="Contraseña" id="password">
-                <span class="toggle-password" onclick="togglePasswordVisibility()">👁️</span>
                 <br></br>
-                <input type="password" placeholder="Repetir Contraseña" id="Rpassword">
-                <span class="Rtoggle-password" onclick="togglePasswordVisibility1()">👁️</span>
+                <input type="password" placeholder="Contraseña" id="password">
+                <br></br>
+                <span class="toggle-password" onclick="togglePasswordVisibility()">👁️</span>
                 <br></br>
                 <button type="submit" onclick="InicioSesion()">Registrarse</button>
             </form>
             <div class="login-link">
-                <p>Ya estas registrado? <a href="file:///C:/Users/USUARIO/Desktop/Matiz%20Rosa/Login.html" id="login-link">Iniciar sesion</a></p>
-              </div>
+                <p>Ya estas registrado? <a href="file:///C:/Users/USUARIO/Desktop/Matiz%20Rosa/Login.html"
+                        id="login-link">Iniciar sesion</a></p>
+            </div>
         </div>
-        </div>
-    </body>
+    </div>
+</body>
+
 </html>
