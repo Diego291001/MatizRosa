@@ -10,11 +10,6 @@ function togglePasswordVisibility() {
         eyeIcon.textContent = "👁️";
     }
 }
-
-function Abrir() {
-    window.location.href = "file:///C:/Users/USUARIO/Desktop/Matiz%20Rosa/Principal.html";
-}
-
 function mostrarFecha() {
     var fecha = new Date();
     var fechaFormateada = fecha.toLocaleDateString();
@@ -24,3 +19,18 @@ function mostrarFecha() {
 }
 
 setInterval(mostrarFecha, 1000);
+
+function Abrir(){
+    window.location.href = "Principal.html";
+}
+function Alcancias(){
+    window.location.href = "C:\Users\USUARIO\Desktop\Matiz%Rosa\ComprarAlcancias.html";
+}
+
+function Estatuas(){
+    window.location.href = "C:\Users\USUARIO\Desktop\Matiz%Rosa\ComprarEstatuas.html";
+}
+
+function Macetas(){
+    window.location.href = "C:\Users\USUARIO\Desktop\Matiz%Rosa\ComprarMacetas.html";
+}

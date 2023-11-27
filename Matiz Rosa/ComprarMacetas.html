@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matiz Rosa</title>
-    <link rel="stylesheet" href="StylesPrincipal.css">
+    <link rel="stylesheet" href="StylesComprar.css">
     <link rel="icon" type="image/png" href="imagenes/Logo.png">
     <script src="Script.js"></script>
 </head>
@@ -25,52 +25,57 @@
     </div>
 
     <div class="row">
-        <form>
         <div class="leftcolumn">
             <div class="card">
-                <h2>ALCANCIAS</h2>
-                <h5><span id="fecha-actual"></span></h5>
-                <div class="Galeria">
-                    <div style="background-image: url('Imagenes/Alcancia.jpg');"></div>
-                    <div style="background-image: url('Imagenes/Alcancia1.jpg');"></div>
-                    <div style="background-image: url('Imagenes/Alcancia2.jpg');"></div>
-                    <div style="background-image: url('Imagenes/Alcancia3.jpg');"></div>
-                    <div style="background-image: url('Imagenes/Alcancia4.jpg');"></div>
-                </div>
-                <p></p>
-                <p></p>
-                <button><a href="file:///C:/Users/USUARIO/Desktop/Matiz%20Rosa/ComprarAlcancias.html"> 🛒 </a></button>
-            </div>
-            <div class="card">
-                <h2>ESTATUAS</h2>
-                <h5><span id="fecha-actual1"></span></h5>
-                <div class="Galeria">
-                    <div style="background-image: url('Imagenes/Estatua.jpg');"></div>
-                    <div style="background-image: url('Imagenes/Estatua1.jpg');"></div>
-                    <div style="background-image: url('Imagenes/Estatua2.jpg');"></div>
-                    <div style="background-image: url('Imagenes/Estatua3.jpg');"></div>
-                    <div style="background-image: url('Imagenes/Estatua4.jpg');"></div>
-                </div>
-                <p></p>
-                <p></p>
-                <button><a href="file:///C:/Users/USUARIO/Desktop/Matiz%20Rosa/ComprarEstatuas.html"> 🛒 </a> </button>
-            </div>
-            <div class="card">
                 <h2>MACETAS</h2>
-                <h5><span id="fecha-actual2"></span></h5>
-                <div class="Galeria">
-                    <div style="background-image: url('Imagenes/Maceta.jpg');"></div>
-                    <div style="background-image: url('Imagenes/Maceta1.jpg');"></div>
-                    <div style="background-image: url('Imagenes/Maceta2.jpg');"></div>
-                    <div style="background-image: url('Imagenes/Maceta3.jpg');"></div>
-                    <div style="background-image: url('Imagenes/Maceta4.jpg');"></div>
-                </div>
-                <p></p>
-                <p></p>
-                <button><a href="file:///C:/Users/USUARIO/Desktop/Matiz%20Rosa/ComprarMacetas.html"> 🛒 </a></button>
-            </div>
+                <h5><span id="fecha-actual"></span></h5>
+                <form action="procesar_compra.php" method="POST">
+                    <div class="Galeria">
+                        <div style="background-image: url('Imagenes/Maceta.jpg');"></div>
+                        <div style="background-image: url('Imagenes/Maceta1.jpg');"></div>
+                        <div style="background-image: url('Imagenes/Maceta2.jpg');"></div>
+                        <div style="background-image: url('Imagenes/Maceta3.jpg');"></div>
+                        <div style="background-image: url('Imagenes/Maceta4.jpg');"></div>
+                    </div>
+
+                    <label for="unidades"><h2>Cantidad de Unidades</h2></label>
+                    <input type="number" id="unidades" name="unidades" min="1" value="1" required><br>
+                    
+                    <label for="nombres"><h2>Nombre</h2></label>
+                    <input type="text" id="nombres" name="nombres" required><br>
+            
+                    <label for="cedula"><h2>Cedula</h2></label>
+                    <input type="text" id="cedula" name="cedula" required><br>
+            
+                    <label for="departamento"><h2>Departamento</h2></label>
+                    <input type="text" id="departamento" name="departamento" required><br>
+            
+                    <label for="ciudad"><h2>Ciudad</h2></label>
+                    <input type="text" id="ciudad" name="ciudad" required><br>
+            
+                    <label for="barrio"><h2>Barrio</h2></label>
+                    <input type="text" id="barrio" name="barrio" required><br>
+            
+                    <label for="direccion"><h2>Direccion</h2></label>
+                    <input type="text" id="direccion" name="direccion" required><br>
+            
+                    <label for="telefono"><h2>Telefono</h2></label>
+                    <input type="tel" id="telefono" name="telefono" required><br>
+
+                    <label for="metodo_pago"><h2>Metodo De Pago</h2></label>
+                    <select id="metodo_pago" name="metodo_pago" required>
+                        <option></option>
+                        <option value="tarjeta_credito">Tarjeta Crédito</option>
+                        <option value="tarjeta_debito">Tarjeta Debito</option>
+                        <option value="PSE">PSE</option>
+                        <option value="efecty">Efecty</option>
+                    </select><br>
+
+                    <br></br>
+                    <button> Comprar </button>
+                </form>
+            </div>            
         </div>
-    </form>
         <div class="rightcolumn">
             <div class="card">
                 <h2>Acerca De Mi</h2>
