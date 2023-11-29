@@ -49,27 +49,6 @@ select{
     display: inline-block;
 }
 
-.topnav {
-    border-radius: 2rem;
-    overflow: hidden;
-    background-color: #fa93c3;
-}
-
-.topnav a {
-    border-radius: 2rem;
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.topnav a:hover {
-    background-color: white;
-    color: black;
-}
-
 .leftcolumn {
     float: left;
     width: 75%;
@@ -168,7 +147,7 @@ select{
 .card {
     border-radius: 2rem;
     text-align: center;
-    background-color: whitesmoke;
+    background-color: white;
     padding: 20px;
     margin-top: 20px;
 }
@@ -180,7 +159,7 @@ select{
     gap: 1rem;
 }
 
-.Galeria>div {
+.Galeria > .img {
     flex: 1;
     border-radius: 2rem;
     background-position: center;
@@ -189,7 +168,7 @@ select{
     transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
 }
 
-.Galeria>div:hover {
+.Galeria > .img.seleccionada {
     flex: 5;
 }
 
@@ -269,5 +248,6 @@ button {
   button:hover {
     box-shadow: inset 0px 0px 25px #1479EA;
   }
+
 
   

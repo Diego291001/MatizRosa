@@ -141,15 +141,42 @@ body {
     max-width: 50px;
     max-height: 50px;
 }
+.Imagen-Logo10 {
+    border: 4px;
+    max-width: 50px;
+    max-height: 50px;
+}
 
 .card {
     border-radius: 2rem;
     text-align: center;
-    background-color: whitesmoke;
+    background-color: white;
     padding: 20px;
     margin-top: 20px;
 }
 
+.card1 {
+    border-radius: 2rem;
+    text-align: center;
+    background-color: aqua;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card2 {
+    border-radius: 2rem;
+    text-align: center;
+    background-color: pink;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.precio{
+    color: green;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 600px;
+}
 
 .Galeria {
     display: flex;
@@ -200,7 +227,7 @@ body {
     }
 }
 
-button {
+.button {
     width: 10em;
     position: relative;
     height: 3.5em;
@@ -215,7 +242,7 @@ button {
     cursor: pointer;
   }
   
-  button::after {
+  .button::after {
     content: "";
     position: absolute;
     top: -10px;
@@ -227,7 +254,7 @@ button {
     transform-origin: center;
   }
   
-  button::before {
+  .button::before {
     content: "";
     transform-origin: center;
     position: absolute;
@@ -239,10 +266,104 @@ button {
     transition: 0.5s;
   }
   
-  button:hover::before, button:hover::after {
+  .button:hover::before, button:hover::after {
     transform: scale(0)
   }
   
-  button:hover {
+  .button:hover {
+    box-shadow: inset 0px 0px 25px #1479EA;
+  }
+
+  .button1 {
+    width: 10em;
+    position: relative;
+    height: 3.5em;
+    border: 3px ridge #149CEA;
+    outline: none;
+    background-color: transparent;
+    color: black;
+    transition: 1s;
+    border-radius: 0.3em;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .button1::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: aqua;
+    transition: 0.5s;
+    transform-origin: center;
+  }
+  
+  .button1::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: aqua;
+    transition: 0.5s;
+  }
+  
+  .button1:hover::before, button:hover::after {
+    transform: scale(0)
+  }
+  
+  .button1:hover {
+    box-shadow: inset 0px 0px 25px #1479EA;
+  }
+
+  .button2 {
+    width: 10em;
+    position: relative;
+    height: 3.5em;
+    border: 3px ridge #149CEA;
+    outline: none;
+    background-color: transparent;
+    color: black;
+    transition: 1s;
+    border-radius: 0.3em;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .button2::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: pink;
+    transition: 0.5s;
+    transform-origin: center;
+  }
+  
+  .button2::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: pink;
+    transition: 0.5s;
+  }
+  
+  .button2:hover::before, button:hover::after {
+    transform: scale(0)
+  }
+  
+  .button2:hover {
     box-shadow: inset 0px 0px 25px #1479EA;
   }
